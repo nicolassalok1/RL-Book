@@ -3,7 +3,6 @@
 #puis :
 #./setup.ps1
 
-# Arrêter en cas d’erreur
 $ErrorActionPreference = "Stop"
 
 conda deactivate
