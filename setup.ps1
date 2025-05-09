@@ -5,15 +5,11 @@
 
 $ErrorActionPreference = "Stop"
 
-conda deactivate
-conda env remove --name RL_Book
-conda create --name RL_Book python=3.8
-conda activate RL_Book
-
-python.exe -m pip install --upgrade pip
-
 Write-Host "Installation des dépendances Python..."
-#pip install -r requirements.txt
-conda env update --file=environment-full.yml
+#
+conda env create -f environment.yml
+conda activate RL_Book
+pip install -r requirements.txt
+
 
 Write-Host "Setup termine avec succes."
