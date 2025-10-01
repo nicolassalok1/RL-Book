@@ -8,7 +8,7 @@ $ErrorActionPreference = "Stop"
 Write-Host "Installation des dépendances Python..."
 #
 conda env create -f environment.yml
-conda activate RL_Book
+conda activate RL_Finance_std
 pip install -r requirements.txt
 
 
